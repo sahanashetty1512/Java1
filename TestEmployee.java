@@ -1,3 +1,4 @@
+package oop;
 class Employee{
     private int id;
     private String name;
@@ -10,18 +11,14 @@ class Employee{
         if(percent>0){
             double increment=salary*percent/100;
             salary=salary+increment;
-        System.out.println("New Salary: " +salary);}
+            System.out.println("New salary:"+salary);}
         else{
-        System.out.println("Salary:"+salary);}}
-public void getEmpDetails(){
-    System.out.println(name+""+id+""+salary);}}
-
-
+            System.out.println("Salary:"+salary);}}
+    public void getEmpDetails(){
+        System.out.println(name + " empid:" + id+ " salary:" + salary);}}
 public class TestEmployee{
-    public static void main(String[] args){
-        Employee emp1=new Employee(1,"kuthyar",5000);
-        emp1.getEmpDetails();
-        emp1.raiseSalary(10);
-        emp1.getEmpDetails();
-    }
-}
+    public static void main(String[]args){
+Employee emp1=new Employee(1,"name:Kuthyar",5000);
+emp1.getEmpDetails();
+emp1.raiseSalary(10);
+emp1.getEmpDetails();}}
